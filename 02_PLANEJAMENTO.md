@@ -8,8 +8,6 @@ _Desenvolvimento de Software_
 
 Este documento descreve o planejamento, as etapas e os itens de verificação para o desenvolvimento do projeto **Agenda Tecnológica**, utilizando HTML, CSS, JavaScript e Bootstrap, conforme os conteúdos abordados na disciplina.
 
----
-
 ## Objetivo Geral
 
 Desenvolver um site responsivo e interativo para divulgação e inscrição em eventos de tecnologia, aplicando os principais conceitos aprendidos na disciplina, tais como:
@@ -19,8 +17,6 @@ Desenvolver um site responsivo e interativo para divulgação e inscrição em e
 - Manipulação do DOM com JavaScript
 - Uso de eventos, arrays e validação de formulários
 
----
-
 ## Tecnologias Utilizadas
 
 - HTML5
@@ -29,41 +25,19 @@ Desenvolver um site responsivo e interativo para divulgação e inscrição em e
 - JavaScript (ES6+)
 - `localStorage` (armazenamento local de dados)
 
----
-
-## Estrutura Inicial do Projeto
-
-### Checklist
-
-- [ ] Criar repositório do projeto
-- [ ] Criar estrutura de pastas:
-  - [ ] `/css`
-  - [ ] `/js`
-  - [ ] `/img`
-- [ ] Criar arquivos iniciais:
-  - [ ] `index.html`
-  - [ ] `eventos.html`
-  - [ ] `inscricao.html`
-  - [ ] `admin.html`
-
----
-
 ## Etapa 1 – Planejamento e Design
 
 ### Objetivo
 
-Definir o escopo do projeto, a identidade visual e a navegação entre as páginas.
+Definir o escopo do projeto e a navegação entre as páginas.
 
 ### Checklist
 
-- [ ] Definir o tipo de eventos (tecnologia)
-- [ ] Definir o público-alvo (profissionais e entusiastas da área de tecnologia)
+- [x] Definir o tipo de eventos (tecnologia)
+- [x] Definir o público-alvo (profissionais e entusiastas da área de tecnologia)
 - [ ] Listar as funcionalidades principais do site
 - [ ] Criar wireframe das páginas principais
-- [ ] Definir cores, tipografia e estilo visual
 - [ ] Planejar a navegação entre as páginas
-
----
 
 ## Etapa 2 – Estrutura HTML
 
@@ -84,8 +58,7 @@ Criar a estrutura semântica das páginas do site utilizando HTML5.
 - [ ] Criar página inicial com eventos em destaque
 - [ ] Criar página de listagem de eventos
 - [ ] Criar página de formulário de inscrição
-
----
+- [ ] Criar página de administração de eventos
 
 ## Etapa 3 – Estilização com CSS e Bootstrap
 
@@ -104,8 +77,6 @@ Aplicar estilos visuais e garantir que o site seja responsivo em diferentes disp
 - [ ] Garantir boa legibilidade (cores e contrastes)
 - [ ] Testar responsividade em diferentes tamanhos de tela
 - [ ] Implementar modo escuro
-
----
 
 ## Etapa 4 – JavaScript e Interatividade
 
@@ -135,8 +106,6 @@ Adicionar comportamento dinâmico e interatividade ao site por meio de JavaScrip
 - [ ] Limpar formulário após o envio
 - [ ] Salvar inscrições no `localStorage`
 
----
-
 ## Etapa 5 – Testes e Finalização
 
 ### Objetivo
@@ -156,8 +125,6 @@ Garantir a qualidade, organização e documentação final do projeto.
   - [ ] Instruções para execução do projeto
 - [ ] Publicar o projeto no Netlify
 
----
-
 ## Status do Projeto
 
 - [ ] Planejamento
@@ -165,7 +132,3 @@ Garantir a qualidade, organização e documentação final do projeto.
 - [ ] Estilização
 - [ ] Interatividade
 - [ ] Finalizado
-
----
-
-📌 **Observação:** Este documento deve ser atualizado conforme o progresso do projeto, servindo como guia de desenvolvimento e registro das etapas executadas.
