@@ -2,30 +2,29 @@ _Descomplica - Prática Integradora_
 
 _Desenvolvimento de Software_
 
-# Planejamento do Projeto
+# Planejamento
 
-## Site de Eventos de Tecnologia – Agenda Tecnológica
+## Site de eventos de tecnologia – Agenda Tecnológica
 
 Este documento descreve o planejamento, as etapas e os itens de verificação para o desenvolvimento do projeto **Agenda Tecnológica**, utilizando HTML, CSS, JavaScript e Bootstrap, conforme os conteúdos abordados na disciplina.
 
-## Objetivo Geral
+## Objetivo geral
 
-Desenvolver um site responsivo e interativo para divulgação e inscrição em eventos de tecnologia, aplicando os principais conceitos aprendidos na disciplina, tais como:
+Desenvolver um site responsivo e interativo para inscrição em eventos de tecnologia, aplicando os principais conceitos aprendidos na disciplina, tais como:
 
 - Estruturação de páginas com HTML5 e semântica adequada
 - Estilização com CSS e uso do framework Bootstrap
 - Manipulação do DOM com JavaScript
 - Uso de eventos, arrays e validação de formulários
 
-## Tecnologias Utilizadas
+## Tecnologias utilizadas
 
 - HTML5
 - CSS3
-- Bootstrap 5.3
-- JavaScript (ES6+)
-- `localStorage` (armazenamento local de dados)
+- JavaScript
+- Bootstrap
 
-## Etapa 1 – Planejamento e Design
+## Etapa 1 – Escopo
 
 ### Objetivo
 
@@ -33,102 +32,93 @@ Definir o escopo do projeto e a navegação entre as páginas.
 
 ### Checklist
 
-- [x] Definir o tipo de eventos (tecnologia)
-- [x] Definir o público-alvo (profissionais e entusiastas da área de tecnologia)
-- [ ] Listar as funcionalidades principais do site
+- [x] Definir o tipo de eventos
+- [x] Definir o público-alvo
+- [x] Listar as funcionalidades principais do site
 - [ ] Criar wireframe das páginas principais
 - [ ] Planejar a navegação entre as páginas
 
-## Etapa 2 – Estrutura HTML
+### Descrição
+
+O tipo de eventos é **Tecnologia**, sendo o público-alvo os **profissionais e entusiastas da área de tecnologia**.
+
+O projeto não conta com um backend, todos os dados são salvos no lado do cliente usando `localStorage`.
+
+Eventos possuem:
+
+- Título
+- Descrição
+- Imagem
+- Data: apenas um dia
+- Horário: início e término
+- Categoria: oficina, curso, palestra ou encontro
+- Local
+  - Presencial: endereço físico
+  - Remoto: URL de chamada
+  - Híbrido: endereço físico e URL de chamada
+
+Principais funcionalidades por página:
+
+- Home
+  - Listar eventos em destaque: 10 eventos de hoje em diante
+  - FAQ
+- Eventos
+  - Listar todos os eventos
+  - Filtrar eventos por:
+    - Categoria
+    - Data
+    - Nome
+    - Tipo de local
+- Evento
+  - Formulário de inscrição
+    - Nome, sobrenome e email
+    - Validação
+  - Cancelamento com modal de confirmação
+- Usuário
+  - Listar eventos inscritos
+  - Cancelamento com modal de confirmação
+- Administração
+  - CRUD de eventos
+  - Validação de formulários de criação e edição
+
+## Etapa 2 – Desenvolvimento
 
 ### Objetivo
 
-Criar a estrutura semântica das páginas do site utilizando HTML5.
-
-### Checklist
-
-- [ ] Criar estrutura básica do HTML5 (`<!DOCTYPE html>`)
-- [ ] Utilizar corretamente as tags semânticas:
-  - [ ] `<header>`
-  - [ ] `<nav>`
-  - [ ] `<main>`
-  - [ ] `<section>`
-  - [ ] `<article>`
-  - [ ] `<footer>`
-- [ ] Criar página inicial com eventos em destaque
-- [ ] Criar página de listagem de eventos
-- [ ] Criar página de formulário de inscrição
-- [ ] Criar página de administração de eventos
-
-## Etapa 3 – Estilização com CSS e Bootstrap
-
-### Objetivo
-
-Aplicar estilos visuais e garantir que o site seja responsivo em diferentes dispositivos.
+Criar a estrutura das páginas e suas funcionalidades.
 
 ### Checklist
 
 - [ ] Adicionar Bootstrap ao projeto
-- [ ] Criar navbar responsiva
-- [ ] Utilizar o sistema de Grid do Bootstrap
-- [ ] Estilizar eventos utilizando Cards
-- [ ] Criar layout responsivo para dispositivos móveis e desktop
-- [ ] Criar estilos personalizados em `style.css`
-- [ ] Garantir boa legibilidade (cores e contrastes)
-- [ ] Testar responsividade em diferentes tamanhos de tela
+- [ ] Layout base
+  - [ ] Header
+  - [ ] Footer
 - [ ] Implementar modo escuro
+- [ ] Página Home
+  - [ ] Carousel de eventos
+  - [ ] Accordion de FAQ
+- [ ] Página Eventos
+  - [ ] Forms para filtro
+  - [ ] Card de evento
+- [ ] Página Evento
+  - [ ] Forms para inscrição
+- [ ] Página Usuário
+- [ ] Página Administração
+  - [ ] Forms para criação
+  - [ ] Forms para edição
 
-## Etapa 4 – JavaScript e Interatividade
+### Descrição
 
-### Objetivo
-
-Adicionar comportamento dinâmico e interatividade ao site por meio de JavaScript.
-
-### Checklist
-
-- [ ] Criar array de eventos em JavaScript
-- [ ] Renderizar eventos dinamicamente no DOM
-- [ ] Utilizar `forEach()` para exibição dos eventos
-- [ ] Implementar filtro de eventos por categoria
-- [ ] Implementar filtro de eventos por data
-- [ ] Manipular o DOM utilizando:
-  - [ ] `querySelector`
-  - [ ] `createElement`
-  - [ ] `appendChild`
-- [ ] Criar interações por meio de eventos:
-  - [ ] `click`
-  - [ ] `submit`
-- [ ] Implementar validação de formulário:
-  - [ ] Nome obrigatório
-  - [ ] E-mail válido
-  - [ ] Data selecionada
-- [ ] Exibir mensagens de erro e sucesso
-- [ ] Limpar formulário após o envio
-- [ ] Salvar inscrições no `localStorage`
-
-## Etapa 5 – Testes e Finalização
-
-### Objetivo
-
-Garantir a qualidade, organização e documentação final do projeto.
-
-### Checklist
-
-- [ ] Testar o site em diferentes navegadores
-- [ ] Validar o comportamento em dispositivos móveis
-- [ ] Revisar a semântica HTML
-- [ ] Revisar o código JavaScript
-- [ ] Organizar arquivos e remover código não utilizado
-- [ ] Criar o arquivo `README.md` contendo:
-  - [ ] Descrição do projeto
-  - [ ] Tecnologias utilizadas
-  - [ ] Instruções para execução do projeto
-- [ ] Publicar o projeto no Netlify
+- Criar layout responsivo para dispositivos móveis e desktop
+- Testar responsividade em diferentes tamanhos de tela
+- Garantir boa legibilidade (cores e contrastes)
+- Renderizar eventos dinamicamente no DOM
+- Exibir mensagens de erro e sucesso nas validações
+- Salvar inscrições no `localStorage`
 
 ## Status do Projeto
 
-- [ ] Planejamento
-- [ ] Estrutura HTML
-- [ ] Estilização
-- [ ] Interatividade
+- [ ] Escopo
+- [ ] Desenvolvimento
+- [ ] Testes
 - [ ] Finalizado
