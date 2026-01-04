@@ -2,29 +2,38 @@ _Descomplica - Prática Integradora_
 
 _Desenvolvimento de Software_
 
-# Planejamento
+# Planejamento do Projeto
 
-## Site de eventos de tecnologia: Agenda Tecnológica
+## Site de Eventos de Tecnologia – Agenda Tecnológica
 
-Este documento descreve o planejamento, as etapas e os itens de verificação para o desenvolvimento do projeto **Agenda Tecnológica**, utilizando HTML, CSS, JS e Bootstrap.
+Este documento descreve o planejamento, as etapas e os itens de verificação para o desenvolvimento do projeto **Agenda Tecnológica**, utilizando HTML, CSS, JavaScript e Bootstrap, conforme os conteúdos abordados na disciplina.
 
-## Objetivo geral
+---
 
-Desenvolver um site responsivo e interativo para divulgação e inscrição em eventos, aplicando os principais conceitos aprendidos na disciplina:
+## Objetivo Geral
 
-- HTML, CSS, JS e Bootstrap
-- HTML semântico
-- JavaScript: DOM, eventos, arrays e validações
+Desenvolver um site responsivo e interativo para divulgação e inscrição em eventos de tecnologia, aplicando os principais conceitos aprendidos na disciplina, tais como:
 
-## Tecnologias utilizadas
+- Estruturação de páginas com HTML5 e semântica adequada
+- Estilização com CSS e uso do framework Bootstrap
+- Manipulação do DOM com JavaScript
+- Uso de eventos, arrays e validação de formulários
+
+---
+
+## Tecnologias Utilizadas
 
 - HTML5
 - CSS3
 - Bootstrap 5.3
-- JavaScript
-- `localStorage`
+- JavaScript (ES6+)
+- `localStorage` (armazenamento local de dados)
 
-## Estrutura inicial do projeto
+---
+
+## Estrutura Inicial do Projeto
+
+### Checklist
 
 - [ ] Criar repositório do projeto
 - [ ] Criar estrutura de pastas:
@@ -39,31 +48,33 @@ Desenvolver um site responsivo e interativo para divulgação e inscrição em e
 
 ---
 
-## Etapa 1 – Planejamento e design
+## Etapa 1 – Planejamento e Design
 
 ### Objetivo
 
-Definir escopo, layout e identidade visual do site.
+Definir o escopo do projeto, a identidade visual e a navegação entre as páginas.
 
 ### Checklist
 
-- [ ] Definir tipo de eventos: tecnologia
-- [ ] Definir público-alvo: profissionais e entusiastas da área de tecnologia
-- [ ] Listar funcionalidades principais do site
+- [ ] Definir o tipo de eventos (tecnologia)
+- [ ] Definir o público-alvo (profissionais e entusiastas da área de tecnologia)
+- [ ] Listar as funcionalidades principais do site
 - [ ] Criar wireframe das páginas principais
 - [ ] Definir cores, tipografia e estilo visual
-- [ ] Planejar navegação entre páginas
+- [ ] Planejar a navegação entre as páginas
+
+---
 
 ## Etapa 2 – Estrutura HTML
 
 ### Objetivo
 
-Criar a estrutura semântica das páginas.
+Criar a estrutura semântica das páginas do site utilizando HTML5.
 
 ### Checklist
 
 - [ ] Criar estrutura básica do HTML5 (`<!DOCTYPE html>`)
-- [ ] Utilizar tags semânticas:
+- [ ] Utilizar corretamente as tags semânticas:
   - [ ] `<header>`
   - [ ] `<nav>`
   - [ ] `<main>`
@@ -74,42 +85,46 @@ Criar a estrutura semântica das páginas.
 - [ ] Criar página de listagem de eventos
 - [ ] Criar página de formulário de inscrição
 
+---
+
 ## Etapa 3 – Estilização com CSS e Bootstrap
 
 ### Objetivo
 
-Aplicar estilos e tornar o site responsivo.
+Aplicar estilos visuais e garantir que o site seja responsivo em diferentes dispositivos.
 
 ### Checklist
 
 - [ ] Adicionar Bootstrap ao projeto
 - [ ] Criar navbar responsiva
-- [ ] Utilizar Grid do Bootstrap
-- [ ] Estilizar eventos usando Cards
-- [ ] Criar layout responsivo para mobile e desktop
+- [ ] Utilizar o sistema de Grid do Bootstrap
+- [ ] Estilizar eventos utilizando Cards
+- [ ] Criar layout responsivo para dispositivos móveis e desktop
 - [ ] Criar estilos personalizados em `style.css`
-- [ ] Garantir boa legibilidade: cores e contrastes
+- [ ] Garantir boa legibilidade (cores e contrastes)
 - [ ] Testar responsividade em diferentes tamanhos de tela
 - [ ] Implementar modo escuro
 
-## Etapa 4 – JavaScript e interatividade
+---
+
+## Etapa 4 – JavaScript e Interatividade
 
 ### Objetivo
 
-Adicionar comportamento dinâmico ao site.
+Adicionar comportamento dinâmico e interatividade ao site por meio de JavaScript.
 
 ### Checklist
 
 - [ ] Criar array de eventos em JavaScript
 - [ ] Renderizar eventos dinamicamente no DOM
-- [ ] Utilizar `forEach()` para exibição de eventos
+- [ ] Utilizar `forEach()` para exibição dos eventos
 - [ ] Implementar filtro de eventos por categoria
 - [ ] Implementar filtro de eventos por data
-- [ ] Manipular DOM com:
+- [ ] Manipular o DOM utilizando:
   - [ ] `querySelector`
   - [ ] `createElement`
   - [ ] `appendChild`
-- [ ] Criar interações com eventos:
+- [ ] Criar interações por meio de eventos:
   - [ ] `click`
   - [ ] `submit`
 - [ ] Implementar validação de formulário:
@@ -117,31 +132,33 @@ Adicionar comportamento dinâmico ao site.
   - [ ] E-mail válido
   - [ ] Data selecionada
 - [ ] Exibir mensagens de erro e sucesso
-- [ ] Limpar formulário após envio
+- [ ] Limpar formulário após o envio
 - [ ] Salvar inscrições no `localStorage`
 
-## Etapa 5 – Testes e finalização
+---
+
+## Etapa 5 – Testes e Finalização
 
 ### Objetivo
 
-Garantir qualidade, organização e documentação do projeto.
+Garantir a qualidade, organização e documentação final do projeto.
 
 ### Checklist
 
 - [ ] Testar o site em diferentes navegadores
-- [ ] Validar comportamento em dispositivos móveis
-- [ ] Revisar semântica HTML
-- [ ] Revisar código JavaScript
+- [ ] Validar o comportamento em dispositivos móveis
+- [ ] Revisar a semântica HTML
+- [ ] Revisar o código JavaScript
 - [ ] Organizar arquivos e remover código não utilizado
-- [ ] Criar `README.md` com:
+- [ ] Criar o arquivo `README.md` contendo:
   - [ ] Descrição do projeto
   - [ ] Tecnologias utilizadas
-  - [ ] Como executar o projeto
-- [ ] Publicar no Netlify
+  - [ ] Instruções para execução do projeto
+- [ ] Publicar o projeto no Netlify
 
 ---
 
-## Status do projeto
+## Status do Projeto
 
 - [ ] Planejamento
 - [ ] Estrutura HTML
@@ -151,4 +168,4 @@ Garantir qualidade, organização e documentação do projeto.
 
 ---
 
-📌 **Observação:** Este documento deve ser atualizado conforme o progresso do projeto, servindo como guia e registro de desenvolvimento.
+📌 **Observação:** Este documento deve ser atualizado conforme o progresso do projeto, servindo como guia de desenvolvimento e registro das etapas executadas.
